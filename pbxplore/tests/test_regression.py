@@ -19,7 +19,7 @@ stdout is captured, and is displayed only if a test fails.
 """
 
 # Use print as a function like in python 3
-from __future__ import print_function
+
 
 import unittest
 from os import path

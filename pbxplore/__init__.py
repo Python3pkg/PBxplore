@@ -40,7 +40,7 @@ def test():
 
     #Get informations about system
     tests.system_info()
-    print("nose version {}".format(nose.__version__))
+    print(("nose version {}".format(nose.__version__)))
 
     # run nose
     try:

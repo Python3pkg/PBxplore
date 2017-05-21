@@ -234,7 +234,7 @@ class TestChainClass(unittest.TestCase):
                    13: {'phi': None, 'psi': None}}
 
         phi_psi = self.ch.get_phi_psi_angles()
-        for resid, angles in results.items():
+        for resid, angles in list(results.items()):
             self.assertAlmostEqual(angles["phi"], phi_psi[resid]["phi"])
             self.assertAlmostEqual(angles["psi"], phi_psi[resid]["psi"])
 
